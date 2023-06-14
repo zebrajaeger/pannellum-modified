@@ -72,15 +72,15 @@ def htmlCompress(text):
 
 def addHeaderHTML(text, version):
     text = text.replace('<!DOCTYPE HTML>','');
-    header = '<!DOCTYPE HTML>\n<!-- Modified Pannellum ' + version + ', https://github.com/zebrajaeger/pannellum-modified.git, original: https://github.com/mpetroff/pannellum -->\n'
+    header = '<!DOCTYPE HTML>\n<!-- Modified Pannellum ' + version + 'm, https://github.com/zebrajaeger/pannellum-modified.git, original: https://github.com/mpetroff/pannellum -->\n'
     return header + text
 
 def addHeaderCSS(text, version):
-    header = '/* Modified Pannellum ' + version + ', https://github.com/zebrajaeger/pannellum-modified.git, original: https://github.com/mpetroff/pannellum */\n'
+    header = '/* Modified Pannellum ' + version + 'm, https://github.com/zebrajaeger/pannellum-modified.git, original: https://github.com/mpetroff/pannellum */\n'
     return header + text
 
 def addHeaderJS(text, version):
-    header = '// Modified Pannellum ' + version + ', https://github.com/zebrajaeger/pannellum-modified.git, original: https://github.com/mpetroff/pannellum\n'
+    header = '// Modified Pannellum ' + version + 'm, https://github.com/zebrajaeger/pannellum-modified.git, original: https://github.com/mpetroff/pannellum\n'
     return header + text
 
 def build(files, css, html, filename, release=False):
